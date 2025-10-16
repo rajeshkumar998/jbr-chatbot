@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chatbot - JBR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-heading">
+  <h1>AI CHATBOT</h1>
+  <p>Talk with an AI assistant powered by JBR. Ask anything!</p>
+</div>
+
+<div class="chatbot-container" id="chat-container">
+  <div class="chatbot-header">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div class="brand">JBR</div>
+
+      <!-- ✅ Buttons in navbar -->
+      <button class="undo-btn" id="undo-btn">Undo</button>
+      <button class="redo-btn" id="redo-btn">Redo</button>
+      <button class="voice-btn" id="voice-btn">🔊</button>
+      <button class="history-btn" id="history-btn">📜 History</button>
+      <button class="toggle-view-btn" id="toggle-view-btn">📱 Mobile View</button>
+    </div>
+
+    <div class="window-controls">
+      <span class="minimize">−</span>
+      <span class="maximize">☐</span>
+      <span class="close">✕</span>
+    </div>
+  </div>
+
+  <div class="chat-area" id="chat-area">
+    <div class="bot-message" id="greeting"></div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+
+<!-- History Modal -->
+<div class="history-modal" id="history-modal">
+  <div class="history-header">Chat History</div>
+  <div class="history-content" id="history-content"></div>
+  <div class="history-actions">
+    <button class="clear-history" id="clear-history">Clear History</button>
+    <button class="close-history" id="close-history">Close</button>
+  </div>
+</div>
+
+<script src="back.js"></script>
+</body>
+</html>
